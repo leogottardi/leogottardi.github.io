@@ -21,11 +21,21 @@ body, h1,h2,h3,h4,h5,h6 {
 
 /* Remove margins from "page content" on small screens */
 .image-leo {
-  border-radius: 30px;
-  max-height: 600px;
+  	border-radius: 30px;
+	max-height: 600px;
+	animation: up 900ms ease-in-out;
+}
+
+/*Animation applied to the image where a position transition is obtained*/
+@keyframes up {
+	from{
+		transform: translateY(500px);
+	}
 }
 
 .titulo-principal{
+    max-width: 1100px;
+    text-align: center;
     margin: 60px auto;
     font-family:'Courier New', Courier, monospace;
     color: #fff;
@@ -38,7 +48,9 @@ body, h1,h2,h3,h4,h5,h6 {
  animation: pisca .7s infinite;
 }
 
-/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+
+/* Animation applied to content referring to the * .title-main * class resulting in a blinking cursor effect. */
 @keyframes pisca{
     0%, 100%{
         opacity: 1;
@@ -82,3 +94,4 @@ body, h1,h2,h3,h4,h5,h6 {
 .experience-title {
 	font-size: 20px;
 }
+
